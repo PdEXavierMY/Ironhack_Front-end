@@ -1,0 +1,99 @@
+/**
+#banner_img {
+    background-image: url(https://images.ctfassets.net/hrltx12pl8hq/4ACnMj4WVSOZRZt0jHu9h5/1506f652bcd70f4dc3e88219fefea858/shutterstock_739595833-min.jpg?fit=fill&w=1200&h=630);
+}
+**/
+
+body {
+    width: 100%;
+}
+
+.intro_n {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-image: url(https://images.ctfassets.net/hrltx12pl8hq/4ACnMj4WVSOZRZt0jHu9h5/1506f652bcd70f4dc3e88219fefea858/shutterstock_739595833-min.jpg?fit=fill&w=1200&h=630);
+    height: 444px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido_n{
+    background-color: rgb(214, 138, 45);
+    width: 60%;
+    height: 200px;
+    border-radius: 1%;
+    
+}
+
+.contenido_n h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 30px;
+}
+
+.detalles {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.page {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    height: 1200px;
+    align-items: flex-start;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.article{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.texto {
+    font-size: 20px;
+    font-style: normal;
+    margin-top: 5px;
+
+}
+
+.texto ul{
+    margin-top: 5px;
+    margin-left: 20px;
+    font-size: 20px;
+    font-style: normal;
+}
+
+.texto ul span{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.article p{
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: normal;
+    margin-top: 5px;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    align-items: flex-start;
+    padding: 20px;
+    transform: none;
+}
