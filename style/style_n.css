@@ -91,3 +91,16 @@ body {
     padding: 20px;
     transform: none;
 }
+
+/* Media query para pantallas más pequeñas (menos de 500px de ancho) */
+@media screen and (max-width: 500px) {
+    .contenido_n {
+        width: 90%; /* Ajusta el ancho del contenido al 90% del contenedor padre */
+        height: 250px; /* Aumenta la altura del contenido */
+    }
+
+    .contenido_n h2 {
+        font-size: 24px; /* Ajusta el tamaño de fuente del título */
+        padding-top: 20px; /* Ajusta el espacio superior del título */
+    }
+}

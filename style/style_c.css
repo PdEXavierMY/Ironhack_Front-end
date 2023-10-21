@@ -94,20 +94,24 @@ button:hover {
 }
 
 
-/* Media query para dispositivos móviles */
-@media screen and (max-width: 768px) {
+/* Media query para pantallas más pequeñas (menos de 500px de ancho) */
+@media screen and (max-width: 500px) {
     .login {
-        width: 90%; /* Cambiar el ancho al 90% del contenedor padre */
-        height: auto; /* Dejar que la altura se ajuste automáticamente */
-        top: auto; /* Reiniciar la posición superior */
-        left: 0; /* Reiniciar la posición izquierda */
-        transform: none; /* Reiniciar la transformación */
-        border-radius: 1%; /* Mantener el radio de borde */
-        text-align: center;
+        width: 90%; /* Ajusta el ancho del formulario al 90% del contenedor padre */
     }
-    
-    input, button {
-        width: 100%; /* Hacer que los campos de entrada y botones ocupen todo el ancho */
+
+    input {
+        width: 90%; /* Ajusta el ancho de los campos de entrada al 90% del formulario */
+        height: 40px; /* Aumenta la altura de los campos de entrada */
+    }
+
+    input::placeholder {
+        font-size: 14px; /* Aumenta el tamaño de fuente del marcador de posición */
+    }
+
+    button {
+        width: 90%; /* Ajusta el ancho del botón al 90% del formulario */
+        height: 50px; /* Aumenta la altura del botón */
     }
 }
 
