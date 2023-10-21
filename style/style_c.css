@@ -93,6 +93,24 @@ button:hover {
     color: rgb(255, 255, 255);
 }
 
+
+/* Media query para dispositivos móviles */
+@media screen and (max-width: 768px) {
+    .login {
+        width: 90%; /* Cambiar el ancho al 90% del contenedor padre */
+        height: auto; /* Dejar que la altura se ajuste automáticamente */
+        top: auto; /* Reiniciar la posición superior */
+        left: 0; /* Reiniciar la posición izquierda */
+        transform: none; /* Reiniciar la transformación */
+        border-radius: 1%; /* Mantener el radio de borde */
+        text-align: center;
+    }
+    
+    input, button {
+        width: 100%; /* Hacer que los campos de entrada y botones ocupen todo el ancho */
+    }
+}
+
 .box div {
     position: absolute;
     width: 60px;
