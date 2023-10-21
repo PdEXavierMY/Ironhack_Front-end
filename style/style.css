@@ -163,24 +163,18 @@ nav a:hover {
     color: #44C0FE;
 }
 
-/* Media query para dispositivos móviles */
-@media screen and (max-width: 768px) {
+/* Media query para pantallas más pequeñas (menos de 500px de ancho) */
+@media screen and (max-width: 500px) {
     .wrapper {
-        width: 90%; /* Cambiar el ancho al 90% del contenedor padre */
-        grid-template-columns: 1fr; /* Cambiar a una sola columna */
+        width: 100%; /* Ajusta el ancho del contenedor principal al 100% */
     }
-    
-    .titulo {
-        grid-column: 1; /* Centrar el título en la única columna */
-        grid-row: 2; /* Mover el título abajo */
-    }
-    
+
     nav {
-        max-width: 100%; /* Hacer que el menú ocupe todo el ancho disponible */
+        font-size: 18px; /* Ajusta el tamaño de fuente para hacerlo más grande */
     }
-    
+
     nav a {
-        padding: 10px; /* Reducir el espacio alrededor de los elementos del menú */
+        padding: 20px; /* Ajusta el espacio alrededor de los elementos del menú */
     }
 }
 
