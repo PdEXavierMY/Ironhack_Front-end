@@ -83,7 +83,6 @@ meter {
 
 
 body {
-    min-width: 1300px;
     margin-top: 10px;
 }
 
@@ -161,21 +160,6 @@ nav a {
 
 nav a:hover {
     color: #44C0FE;
-}
-
-/* Media query para pantallas más pequeñas (menos de 500px de ancho) */
-@media screen and (max-width: 500px) {
-    .wrapper {
-        width: 100%; /* Ajusta el ancho del contenedor principal al 100% */
-    }
-
-    nav {
-        font-size: 18px; /* Ajusta el tamaño de fuente para hacerlo más grande */
-    }
-
-    nav a {
-        padding: 20px; /* Ajusta el espacio alrededor de los elementos del menú */
-    }
 }
 
 .banner { /*banner de la pagina*/
@@ -474,3 +458,107 @@ article h2 {
     text-align: left;
     color: rgba(0, 0, 0, 0.216882);
 }
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 500px) {
+    body {
+      margin-top: 0; /* Elimina el margen superior en dispositivos móviles */
+    }
+  
+    h1 {
+      font-size: 24px; /* Tamaño de fuente más pequeño para h1 en dispositivos móviles */
+      line-height: 30px;
+    }
+  
+    h2 {
+      font-size: 24px; /* Tamaño de fuente más pequeño para h2 en dispositivos móviles */
+      line-height: 32px;
+    }
+  
+    .wrapper {
+      width: 100%; /* Hace que el contenedor ocupe todo el ancho en dispositivos móviles */
+      grid-template-columns: 1fr; /* Una sola columna en dispositivos móviles */
+      margin-top: 20px; /* Margen superior ajustado */
+    }
+  
+    nav {
+      font-size: 14px; /* Tamaño de fuente más pequeño para el menú de navegación */
+      letter-spacing: 2px; /* Espaciado de letras ajustado */
+    }
+  
+    nav a {
+      padding: 20px; /* Aumenta el espacio alrededor de los elementos del menú */
+    }
+  
+    .banner {
+      max-height: 300px; /* Reducción de la altura del banner en dispositivos móviles */
+      margin-bottom: 40px; /* Ajuste del margen inferior del banner */
+    }
+  
+    .principal {
+      width: 100%; /* Ancho completo en dispositivos móviles */
+      flex-direction: column; /* Cambio a diseño de columna en dispositivos móviles */
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 40px; /* Ajuste del margen inferior */
+    }
+  
+    .prin_img, .prin_text {
+      margin: 10px 0; /* Espacio entre elementos de principal */
+    }
+  
+    .card {
+      transform: translateY(0); /* Elimina la transformación en dispositivos móviles */
+      height: auto; /* Altura automática en dispositivos móviles */
+      width: 100%; /* Ancho completo en dispositivos móviles */
+      padding: 20px; /* Aumenta el espacio alrededor del elemento */
+    }
+  
+    .card_img {
+      height: auto; /* Altura automática en dispositivos móviles */
+      width: 100%; /* Ancho completo en dispositivos móviles */
+      margin-bottom: 20px; /* Ajuste del margen inferior */
+    }
+  
+    .blog, .blog-M, .blog-XL {
+      width: 100%; /* Ancho completo en dispositivos móviles */
+      margin-left: 0;
+      margin-right: 0;
+    }
+  
+    .blog h2:hover, .banner h2:hover {
+      text-decoration: none; /* Elimina el subrayado en dispositivos móviles */
+    }
+  
+    .etiqueta, .etiquetagrupo {
+      max-width: 100%; /* Ancho máximo en dispositivos móviles */
+      width: auto; /* Ancho automático en dispositivos móviles */
+    }
+  
+    .social {
+      width: 100%; /* Ancho completo en dispositivos móviles */
+      margin: 0; /* Elimina el margen en dispositivos móviles */
+    }
+  
+    .social_nets {
+      flex-direction: column; /* Cambio a diseño de columna en dispositivos móviles */
+      gap: 20px; /* Espacio entre elementos reducido */
+      margin: 40px 0;
+    }
+  
+    .social_nets img {
+      width: 50px; /* Tamaño de imagen reducido */
+      height: 50px;
+    }
+  
+    .footer {
+      width: 100%; /* Ancho completo en dispositivos móviles */
+      margin: 0; /* Elimina el margen en dispositivos móviles */
+    }
+  
+    .footer nav a {
+      margin: 0; /* Elimina el margen en dispositivos móviles */
+      margin-top: 20px; /* Ajuste del margen superior */
+    }
+  }
+  
