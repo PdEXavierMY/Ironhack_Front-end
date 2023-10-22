@@ -475,7 +475,7 @@ article h2 {
         display: flex;
         flex-direction: column;
         width: 100%;
-        margin-bottom: 150%;
+        margin-bottom: 180%;
     }
     
     .blog-M { /*estilos para el cuerpo de la pagina home*/
@@ -492,7 +492,7 @@ article h2 {
     }
 
     #XL2 {
-        margin-bottom: 70%;
+        margin-bottom: 100%;
         border-top: 20px solid #D8D8D8;
     }
     
