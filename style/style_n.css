@@ -39,6 +39,28 @@ body {
     text-align: center;
 }
 
+@media screen and (max-width: 1000px) {
+    .intro_n {
+        height: 700px;
+    }
+    
+    .contenido_n{
+        width: 80%;
+        height: 400px;
+        
+    }
+    
+    .contenido_n h2{
+        font-size: 50px;
+        padding-top: 100px;
+    }
+    
+    .detalles {
+        margin-top: 20px;
+        font-size: larger;
+    }
+}
+
 .page {
     display: flex;
     flex-direction: row;
@@ -92,71 +114,46 @@ body {
     transform: none;
 }
 
-/* Media query para pantallas más pequeñas (menos de 500px de ancho) */
-@media screen and (max-width: 500px) {
-    .contenido_n {
-        width: 90%; /* Ajusta el ancho del contenido al 90% del contenedor padre */
-        height: 250px; /* Aumenta la altura del contenido */
+@media screen and (max-width: 1000px) {
+    .page {
+        display: flex;
+        flex-direction: column; /* Cambia la dirección de fila a columna */
+        margin-bottom: 30px;
+        height: auto;
+        align-items: flex-start;
+        margin-right: 10px;
+        margin-left: 10px;
     }
 
-    .contenido_n h2 {
-        font-size: 24px; /* Ajusta el tamaño de fuente del título */
-        padding-top: 20px; /* Ajusta el espacio superior del título */
+    article p, article li {
+        font-size: 30px;
+    }
+
+    .card {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        align-items: flex-start;
+        padding: 20px;
+        transform: none;
+    }
+
+    .card p {
+        font-size: 40px;
+        line-height: 40px;
+    }
+
+    .card img {
+        width: 100%;
+    }
+
+    .autor_img {
+        width: 100%;
+    }
+
+    .card_img {
+        height: 400px;
     }
 }
-
-/* Estilos para dispositivos móviles */
-@media screen and (max-width: 500px) {
-    .intro_n {
-      height: 300px; /* Aumenta la altura del elemento .intro_n */
-    }
-  
-    .contenido_n {
-      width: 90%; /* Ajusta el ancho del contenido al 90% del contenedor padre */
-      height: 250px; /* Aumenta la altura del contenido */
-    }
-  
-    .contenido_n h2 {
-      font-size: 24px; /* Ajusta el tamaño de fuente del título */
-      padding-top: 20px; /* Ajusta el espacio superior del título */
-    }
-  
-    .page {
-      display: flex;
-      flex-direction: column; /* Cambia a diseño de columna en dispositivos móviles */
-      margin-right: 0;
-      margin-left: 0;
-      margin-bottom: 20px; /* Ajusta el margen inferior */
-      height: auto; /* Altura automática en dispositivos móviles */
-    }
-  
-    .article {
-      align-items: center; /* Centra los elementos en dispositivos móviles */
-    }
-  
-    .texto {
-      font-size: 18px; /* Tamaño de fuente más pequeño para el texto */
-    }
-  
-    .texto ul {
-      margin-left: 10px; /* Ajusta el margen izquierdo de las listas desordenadas */
-      font-size: 18px; /* Tamaño de fuente más pequeño para las listas */
-    }
-  
-    .texto ul span {
-      text-decoration: underline;
-      font-weight: bold;
-    }
-  
-    .article p {
-      font-size: medium; /* Tamaño de fuente más pequeño para los párrafos */
-    }
-  
-    .card {
-      width: 90%; /* Ajusta el ancho del elemento .card */
-      margin-left: auto; /* Centra el elemento .card en dispositivos móviles */
-      margin-right: auto;
-      padding: 10px; /* Aumenta el espacio alrededor del elemento .card */
-    }
-  }
-  
