@@ -573,7 +573,7 @@ article h2 {
     cursor : pointer;
 }
 
-.footer{ /*estilos para el footer*/
+footer{ /*estilos para el footer*/
     border-top: 1px solid #D8D8D8; 
     line-height: 0.1em;
     width: 1110px;
@@ -581,7 +581,7 @@ article h2 {
     margin-right: auto;
 }
 
-.footer nav{ /*estilos para el navegador del footer*/
+footer nav{ /*estilos para el navegador del footer*/
     display:block;
     position: relative;
     margin:0px;
@@ -592,7 +592,7 @@ article h2 {
     color: #44C0FE;
 }
 
-.footer nav a{
+footer nav a{
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
@@ -630,17 +630,17 @@ article h2 {
         height: 80px;
     }
 
-    .footer {
+    footer {
         padding-top: 20px;
         border-top: 1px solid #D8D8D8;
     }
 
-    .footer nav {
+    footer nav {
         margin: 0;
         margin-bottom: 20px;
     }
 
-    .footer nav a {
+    footer nav a {
         margin: 5px;
         margin-left: 0;
         padding: 0;
