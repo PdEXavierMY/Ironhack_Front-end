@@ -475,7 +475,7 @@ article h2 {
         display: flex;
         flex-direction: column;
         width: 100%;
-        margin-bottom: 180%;
+        margin-bottom: 130%;
     }
     
     .blog-M { /*estilos para el cuerpo de la pagina home*/
@@ -483,16 +483,18 @@ article h2 {
         align-items: center;
         padding: 20px;
         height: auto;
+        margin-bottom: 30px;
     }
     
     .blog-XL {
         width: 100%;
         align-items: center;
         padding: 20px;
+        margin-bottom: 30px;
     }
 
     #XL2 {
-        margin-bottom: 100%;
+        margin-bottom: 50%;
         border-top: 20px solid #D8D8D8;
     }
     
