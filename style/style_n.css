@@ -1,159 +1,172 @@
+/* Estilos generales para el cuerpo de la página */
 body {
-    width: 100%;
+    width: 100%; /* Asegura que el ancho del cuerpo se ajuste al 100% del viewport */
 }
 
+/* Estilos para la sección de introducción (intro_n) */
 .intro_n {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    background-image: url(https://images.ctfassets.net/hrltx12pl8hq/4ACnMj4WVSOZRZt0jHu9h5/1506f652bcd70f4dc3e88219fefea858/shutterstock_739595833-min.jpg?fit=fill&w=1200&h=630);
-    height: 444px;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin-top: 20px; /* Margen superior de 20 píxeles */
+    margin-bottom: 20px; /* Margen inferior de 20 píxeles */
+    background-image: url(https://images.ctfassets.net/hrltx12pl8hq/4ACnMj4WVSOZRZt0jHu9h5/1506f652bcd70f4dc3e88219fefea858/shutterstock_739595833-min.jpg?fit=fill&w=1200&h=630); /* Fondo de imagen */
+    height: 444px; /* Altura de 444 píxeles */
+    width: 100%; /* Ancho del 100% para que cubra todo el ancho del viewport */
+    background-size: cover; /* Ajusta el tamaño de fondo para cubrir el área */
+    background-position: center; /* Centra la imagen de fondo */
+    display: flex; /* Utiliza flexbox para alinear elementos */
+    flex-direction: column; /* Elementos apilados verticalmente */
+    justify-content: center; /* Centra verticalmente los elementos */
+    align-items: center; /* Centra horizontalmente los elementos */
 }
 
-.contenido_n{
-    background-color: rgb(214, 138, 45);
-    width: 60%;
-    height: 200px;
-    border-radius: 1%;
-    
+/* Estilos para el contenido de introducción (contenido_n) */
+.contenido_n {
+    background-color: rgb(214, 138, 45); /* Fondo de color naranja */
+    width: 60%; /* Ancho del 60% del contenedor padre */
+    height: 200px; /* Altura de 200 píxeles */
+    border-radius: 1%; /* Bordes redondeados del 1% */
 }
 
-.contenido_n h2{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    text-align: center;
-    text-transform: uppercase;
-    padding-top: 30px;
+/* Estilos para el título (h2) dentro del contenido de introducción */
+.contenido_n h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Familia de fuentes */
+    font-style: normal; /* Estilo de fuente normal */
+    font-weight: 400; /* Peso de fuente normal */
+    font-size: 30px; /* Tamaño de fuente de 30 píxeles */
+    text-align: center; /* Texto centrado horizontalmente */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    padding-top: 30px; /* Relleno superior de 30 píxeles */
 }
 
+/* Estilos para los detalles (detalles) dentro del contenido de introducción */
 .detalles {
-    margin-top: 5px;
-    text-align: center;
+    margin-top: 5px; /* Margen superior de 5 píxeles */
+    text-align: center; /* Texto centrado horizontalmente */
 }
+
+/* Estilos para pantallas con un ancho máximo de 1000px */
 
 @media screen and (max-width: 1000px) {
     .intro_n {
-        height: 700px;
+        height: 700px; /* Aumenta la altura de la sección de introducción */
     }
     
-    .contenido_n{
-        width: 80%;
-        height: 400px;
-        
+    .contenido_n {
+        width: 80%; /* Aumenta el ancho del contenido de introducción */
+        height: 400px; /* Aumenta la altura del contenido de introducción */
     }
     
-    .contenido_n h2{
-        font-size: 50px;
-        padding-top: 100px;
+    .contenido_n h2 {
+        font-size: 50px; /* Aumenta el tamaño de fuente del título */
+        padding-top: 100px; /* Aumenta el relleno superior del título */
     }
     
     .detalles {
-        margin-top: 20px;
-        font-size: larger;
+        margin-top: 20px; /* Aumenta el margen superior de los detalles */
+        font-size: larger; /* Aumenta el tamaño de fuente de los detalles */
     }
 }
 
+/* Estilos para la clase .page */
 .page {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 30px;
-    height: 1300px;
-    align-items: flex-start;
-    margin-right: 10px;
-    margin-left: 10px;
+    display: flex; /* Utiliza flexbox para alinear elementos */
+    flex-direction: row; /* Elementos en fila horizontal */
+    margin-bottom: 30px; /* Margen inferior de 30px */
+    height: 1300px; /* Altura de 1300px */
+    align-items: flex-start; /* Alinea elementos al inicio verticalmente */
+    margin-right: 10px; /* Margen derecho de 10px */
+    margin-left: 10px; /* Margen izquierdo de 10px */
 }
 
-.article{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+/* Estilos para la clase .article */
+.article {
+    display: flex; /* Utiliza flexbox para alinear elementos */
+    flex-direction: column; /* Elementos apilados verticalmente */
+    align-items: flex-start; /* Alinea elementos al inicio verticalmente */
 }
 
+/* Estilos para la clase .texto */
 .texto {
-    font-size: 20px;
-    font-style: normal;
-    margin-top: 5px;
-
+    font-size: 20px; /* Tamaño de fuente de 20px */
+    font-style: normal; /* Estilo de fuente normal */
+    margin-top: 5px; /* Margen superior de 5px */
 }
 
-.texto ul{
-    margin-top: 5px;
-    margin-left: 20px;
-    font-size: 20px;
-    font-style: normal;
+/* Estilos para listas no ordenadas dentro de la clase .texto */
+.texto ul {
+    margin-top: 5px; /* Margen superior de 5px */
+    margin-left: 20px; /* Margen izquierdo de 20px (sangría) */
+    font-size: 20px; /* Tamaño de fuente de 20px */
+    font-style: normal; /* Estilo de fuente normal */
 }
 
-.texto ul span{
-    text-decoration: underline;
-    font-weight: bold;
+/* Estilos para elementos <span> dentro de listas no ordenadas */
+.texto ul span {
+    text-decoration: underline; /* Texto subrayado */
+    font-weight: bold; /* Texto en negrita */
 }
 
-.article p{
-    font-size: large;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-style: normal;
-    margin-top: 5px;
+/* Estilos para párrafos dentro de la clase .article */
+.article p {
+    font-size: large; /* Tamaño de fuente grande */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Fuente específica */
+    font-style: normal; /* Estilo de fuente normal */
+    margin-top: 5px; /* Margen superior de 5px */
 }
 
+/* Estilos para la clase .card */
 .card {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    margin-left: 30px;
-    align-items: flex-start;
-    padding: 20px;
-    transform: none;
+    width: 100%; /* Ancho del 100% */
+    height: 100%; /* Altura del 100% */
+    display: flex; /* Utiliza flexbox para alinear elementos */
+    flex-direction: column; /* Elementos apilados verticalmente */
+    margin-left: 30px; /* Margen izquierdo de 30px */
+    align-items: flex-start; /* Alinea elementos al inicio verticalmente */
+    padding: 20px; /* Relleno de 20px */
+    transform: none; /* Sin transformación (elimina cualquier transformación previa) */
 }
 
+/* Cambios en la estructura de .page para pantallas de ancho máximo de 1000px */
 @media screen and (max-width: 1000px) {
     .page {
         display: flex;
         flex-direction: column; /* Cambia la dirección de fila a columna */
-        margin-bottom: 30px;
-        height: auto;
-        align-items: flex-start;
-        margin-right: 10px;
-        margin-left: 10px;
+        margin-bottom: 30px; /* Margen inferior de 30px */
+        height: auto; /* Altura automática */
+        align-items: flex-start; /* Alinea elementos al inicio verticalmente */
+        margin-right: 10px; /* Margen derecho de 10px */
+        margin-left: 10px; /* Margen izquierdo de 10px */
     }
 
+    /* Aumenta el tamaño de fuente de párrafos y elementos de lista dentro de article */
     article p, article li {
-        font-size: 30px;
+        font-size: 30px; /* Tamaño de fuente de 30px */
     }
 
+    /* Cambios en los estilos de la clase .card */
     .card {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        margin-left: 0px;
-        align-items: flex-start;
-        padding: 20px;
-        transform: none;
+        width: 100%; /* Ancho del 100% */
+        height: 100%; /* Altura del 100% */
+        display: flex; /* Utiliza flexbox para alinear elementos */
+        flex-direction: column; /* Elementos apilados verticalmente */
+        margin-left: 0px; /* Margen izquierdo de 0px */
+        align-items: flex-start; /* Alinea elementos al inicio verticalmente */
+        padding: 20px; /* Relleno de 20px */
+        transform: none; /* Sin transformación (elimina cualquier transformación previa) */
     }
 
+    /* Aumenta el tamaño de fuente y altura de línea de los párrafos dentro de .card */
     .card p {
-        font-size: 40px;
-        line-height: 40px;
+        font-size: 40px; /* Tamaño de fuente de 40px */
+        line-height: 40px; /* Altura de línea de 40px */
     }
 
-    .card img {
-        width: 100%;
+    /* Ajusta el ancho de las imágenes dentro de .card y .autor_img */
+    .card img, .autor_img {
+        width: 100%; /* Ancho del 100% */
     }
 
-    .autor_img {
-        width: 100%;
-    }
-
+    /* Ajusta la altura de las imágenes en .card_img */
     .card_img {
-        height: 400px;
+        height: 400px; /* Altura de 400px */
     }
 }

@@ -1,136 +1,189 @@
-body{
+/* Establece el ancho del cuerpo de la página al 100% del ancho de la ventana */
+body {
     width: 100%;
 }
 
+/* Estilos para la sección */
 section {
     width: 100%;
-    height: 5cm;
+    height: 5cm; /* Altura de 5 centímetros */
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
+    justify-content: center; /* Centra verticalmente el contenido */
+    align-items: center; /* Centra horizontalmente el contenido */
+    background-color: black; /* Fondo negro */
 }
 
+/* Estilos para los párrafos dentro de la sección */
 section p {
-    color: white;
-    font-size: 1.5em;
+    color: white; /* Texto en blanco */
+    font-size: 1.5em; /* Tamaño de fuente 1.5em */
 }
 
+/* Estilos para el contenedor #bcheck */
 #bcheck {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; /* Centra verticalmente el contenido */
 }
 
+/* Estilos para el contenedor con clase .center */
 .center {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 20px; /* Margen superior de 20px */
+    margin-bottom: 20px; /* Margen inferior de 20px */
     width: 100%;
-    height: 90%;
-    position: fixed;
-    overflow: hidden;
-    background: linear-gradient(90deg, rgba(2, 0, .6, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    height: 90%; /* Altura del 90% del contenedor padre */
+    position: fixed; /* Posición fija en la ventana */
+    overflow: hidden; /* Contenido que desborda se oculta */
+    background: linear-gradient(90deg, rgba(2, 0, .6, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%); /* Fondo con degradado lineal */
 }
 
+/* Estilos para el contenedor con clase .login */
 .login {
     width: 490.5px;
     height: 426.25px;
-    border: 1px solid #000000;
-    background-color: rgb(249, 240, 240);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 1%;
-    text-align: center;
+    border: 1px solid #000000; /* Borde sólido de 1px en negro */
+    background-color: rgb(249, 240, 240); /* Color de fondo */
+    position: absolute; /* Posición absoluta en relación al contenedor padre */
+    top: 50%; /* Alinea en la mitad superior */
+    left: 50%; /* Alinea en el centro horizontal */
+    transform: translate(-50%, -50%); /* Centra el contenedor en la ventana */
+    border-radius: 1%; /* Borde redondeado del 1% */
+    text-align: center; /* Texto centrado horizontalmente */
 }
 
+/* Estilos para el contenedor #registro */
 #registro {
-    padding-top: 30px;
+    padding-top: 30px; /* Agrega un relleno superior de 30px */
 }
 
+/* Estilos para el encabezado h2 dentro del contenedor con clase .login */
 .login h2 {
-    color: #000000;
-    padding: 20px;
-    text-transform: uppercase;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #000000; /* Color del texto en negro */
+    padding: 20px; /* Relleno de 20px en todas las direcciones */
+    text-transform: uppercase; /* Transforma el texto a mayúsculas */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Fuente personalizada */
 }
 
+/* Estilos para los elementos de entrada (input) */
 input {
-    width: 50%;
-    height: 5%;
-    border: 1px solid #000000;
-    border-radius: 1%;
-    padding: 10px;
-    margin: 10px 0px 15px 0px;
-    box-sizing: border-box;
-    outline: none;
+    width: 50%; /* Ancho del 50% del contenedor padre */
+    height: 5%; /* Altura del 5% del contenedor padre */
+    border: 1px solid #000000; /* Borde sólido de 1px en negro */
+    border-radius: 1%; /* Borde redondeado del 1% */
+    padding: 10px; /* Relleno de 10px en todas las direcciones */
+    margin: 10px 0px 15px 0px; /* Márgenes superior e inferior de 10px, márgenes izquierdo y derecho de 0px */
+    box-sizing: border-box; /* La caja incluye el relleno en su ancho/altura total */
+    outline: none; /* Quita el borde de enfoque al hacer clic */
 }
 
+/* Estilos para el marcador de posición (placeholder) de los elementos de entrada */
 input::placeholder {
-    opacity: 0.6;
-    text-align: left;
+    opacity: 0.6; /* Opacidad del marcador de posición al 60% */
+    text-align: left; /* Alinea el texto a la izquierda */
 }
 
+/* Estilos para el botón */
 button {
-    width: 50%;
-    height: 40.5px;
-    border: 1px solid #000000;
-    border-radius: 1%;
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    background-color: rgb(127, 221, 255);
-    border-radius: 1px;
+    width: 50%; /* Ancho del 50% del contenedor padre */
+    height: 40.5px; /* Altura de 40.5px */
+    border: 1px solid #000000; /* Borde sólido de 1px en negro */
+    border-radius: 1%; /* Borde redondeado del 1% */
+    padding: 10px; /* Relleno de 10px en todas las direcciones */
+    margin-top: 10px; /* Márgen superior de 10px */
+    margin-bottom: 10px; /* Márgen inferior de 10px */
+    background-color: rgb(127, 221, 255); /* Color de fondo */
+    border-radius: 1px; /* Borde redondeado de 1px (repetido, puedes eliminarlo) */
 }
 
+/* Estilos para el botón al pasar el cursor sobre él */
 button:hover {
-    cursor: pointer;
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
+    cursor: pointer; /* Cambia el cursor a una mano cuando se pasa sobre el botón */
+    background-color: rgb(0, 0, 0); /* Cambia el color de fondo a negro */
+    color: rgb(255, 255, 255); /* Cambia el color del texto a blanco */
 }
 
-@media screen and (max-width: 1000px) {            
-    .login {
-        width: 70%;
-        height: 45%;
-    }
-    
+@media screen and (max-width: 650px) {
     .login h2 {
-        padding: 30px;
-        font-size: 60px;
+        padding: 50px; /* Aumenta el relleno a 50px en todas las direcciones */
+        font-size: 80px; /* Aumenta el tamaño de fuente a 50px */
     }
     
+    /* Estilos para los elementos de entrada (input) */
     input {
-        width: 60%;
-        height: 60px;
+        width: 70%; /* Reducción del ancho al 70% del contenedor padre */
+        height: 70px; /* Establece una altura fija de 70px */
     }
     
+    /* Estilos para el botón */
     button {
-        width: 60%;
-        height: 60px;
-        font-size: 30px;
+        width: 70%; /* Reducción del ancho al 70% del contenedor padre */
+        height: 70px; /* Establece una altura fija de 70px */
+        font-size: 40px; /* Aumenta el tamaño de fuente del botón a 40px */
     }
 
+    /* Estilos para las etiquetas (label) */
     label {
-        font-size: 30px;
+        font-size: 50px; /* Aumenta el tamaño de fuente de las etiquetas a 50px */
     }
 
+    /* Estilos para los párrafos (p) dentro del formulario */
     form p {
-        font-size: 25px;
-    }
-
-    section {
-        height: 300px;
-    }
-
-    section p, section h2 {
-        font-size: +40px;
+        font-size: 35px; /* Aumenta el tamaño de fuente de los párrafos a 35px */
     }
 }
+
+/*Estilos aplicados a pantallas menores de 1000px*/
+@media screen and (max-width: 1000px) {
+    /* Estilos para el contenedor de inicio de sesión (.login) */
+    .login {
+        width: 100%; /* Reducción del ancho al 70% del contenedor padre */
+        height: 55%; /* Reducción de la altura al 45% del contenedor padre */
+    }
+    
+    /* Estilos para el encabezado h2 dentro del contenedor de inicio de sesión */
+    .login h2 {
+        padding: 30px; /* Aumenta el relleno a 30px en todas las direcciones */
+        font-size: 60px; /* Aumenta el tamaño de fuente a 60px */
+    }
+    
+    /* Estilos para los elementos de entrada (input) */
+    input {
+        width: 60%; /* Reducción del ancho al 60% del contenedor padre */
+        height: 60px; /* Establece una altura fija de 60px */
+    }
+    
+    /* Estilos para el botón */
+    button {
+        width: 60%; /* Reducción del ancho al 60% del contenedor padre */
+        height: 60px; /* Establece una altura fija de 60px */
+        font-size: 30px; /* Aumenta el tamaño de fuente del botón a 30px */
+    }
+
+    /* Estilos para las etiquetas (label) */
+    label {
+        font-size: 30px; /* Aumenta el tamaño de fuente de las etiquetas a 30px */
+    }
+
+    /* Estilos para los párrafos (p) dentro del formulario */
+    form p {
+        font-size: 25px; /* Aumenta el tamaño de fuente de los párrafos a 25px */
+    }
+
+    /* Estilos para la sección */
+    section {
+        height: 300px; /* Establece la altura de la sección a 300px */
+    }
+
+    /* Estilos para el texto en la sección */
+    section p, section h2 {
+        font-size: +40px; /* Aumenta el tamaño de fuente de los párrafos y encabezados en 40px (nota: el operador + no es válido, puede ser un error) */
+    }
+}
+
+/*Estilos para crear el fondo animado*/
 
 .box div {
     position: absolute;

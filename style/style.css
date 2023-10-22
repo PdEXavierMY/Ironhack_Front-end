@@ -1,3 +1,7 @@
+/***Precargado CSS***/
+
+
+
 /***
     The new CSS reset - version 1.7.3 (last updated 7.8.2022)
     GitHub page: https://github.com/elad2412/the-new-css-reset
@@ -81,572 +85,655 @@ meter {
 }
 
 
-
+/* Estilos generales del cuerpo del documento */
 body {
-    margin-top: 10px;
-    min-width: 1200px;
+    margin-top: 10px; /* Márgenes superiores de 10 píxeles */
+    min-width: 1200px; /* Ancho mínimo de la ventana gráfica de 1200 píxeles */
 }
 
+/* Estilos para pantallas con un ancho máximo de 1000px */
 @media screen and (max-width: 1000px) {
     body {
-        width: 100%;
+        width: 100%; /* Ajustar el ancho del cuerpo al 100% de la ventana gráfica */
     }
 }
 
+/* Estilos para encabezados de nivel 1 */
 h1 {
-    font-family: 'Roboto';
+    font-family: 'Roboto'; /* Fuente Roboto */
     font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 42px;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    color: #000000;
+    font-weight: 400; /* Grosor de la fuente*/
+    font-size: 36px; /* Tamaño de la fuente de 36 píxeles */
+    line-height: 42px; /* Altura de línea de 42 píxeles */
+    letter-spacing: 5px; /* Espaciado entre caracteres de 5 píxeles */
+    text-transform: uppercase; /* Transformar el texto a mayúsculas */
+    text-align: center; /* Alinear el texto al centro */
+    margin-left: auto; /* Márgenes izquierdos automáticos */
+    margin-right: auto; /* Márgenes derechos automáticos */
+    color: #000000; /* Color de texto negro */
 }
 
+/* Estilos para encabezados de nivel 2 */
 h2 {
-    font-family: 'Roboto';
+    font-family: 'Roboto'; /* Fuente Roboto */
     font-style: normal;
-    font-weight: 300;
-    font-size: 36px;
-    line-height: 44px;
+    font-weight: 300; /* Grosor de la fuente*/
+    font-size: 36px; /* Tamaño de la fuente de 36 píxeles */
+    line-height: 44px; /* Altura de línea de 44 píxeles */
     color: #FFFFFF;
 }
 
+/* Estilos para encabezados de nivel 6 */
 h6 {
-    font-family: 'Lato';
+    font-family: 'Lato';  /* Fuente de texto 'Lato' */
     font-style: normal;
-    font-weight: 300;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #FFFFFF;
+    font-weight: 300;  /* Peso de la fuente */
+    font-size: 12px;  /* Tamaño de fuente de 12 píxeles */
+    line-height: 14px;  /* Altura de línea de 14 píxeles */
+    letter-spacing: 1px;  /* Espaciado entre caracteres de 1 píxel */
+    text-transform: uppercase;  /* Transformar el texto en mayúsculas */
+    color: #FFFFFF;  /* Color de texto blanco */
 }
 
-.wrapper { /*contenedor del titulo y las imagenes de la parte superior de la pagina*/
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 65px;
-    max-width: 1110px;
-    display: grid; /*para que se puedan colocar los elementos de forma sencilla como si fuera una tabla*/
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1px;
-    grid-auto-rows: minmax(100px, auto);
+/* Estilos para el contenedor principal que alberga el título y las imágenes en la parte superior de la página */
+.wrapper {
+    margin-left: auto; /* Margen izquierdo automático */
+    margin-right: auto; /* Margen derecho automático */
+    margin-top: 65px; /* Margen superior de 65 píxeles */
+    max-width: 1110px; /* Ancho máximo del contenedor de 1110 píxeles */
+    display: grid; /* Usar un sistema de cuadrícula para organizar elementos */
+    grid-template-columns: repeat(3, 1fr); /* Definir 3 columnas de igual tamaño */
+    gap: 1px; /* Espacio entre las celdas de la cuadrícula de 1 píxel */
+    grid-auto-rows: minmax(100px, auto); /* Altura mínima de las filas de 100 píxeles, ajustada automáticamente */
 }
 
+/* Estilos para el título en la cuadrícula */
 .titulo {
-    grid-column: 2;
-    grid-row: 1;
+    grid-column: 2; /* Colocar el título en la segunda columna de la cuadrícula */
+    grid-row: 1; /* Colocar el título en la primera fila de la cuadrícula */
 }
 
-nav { /*menu de navegacion*/
-    font-family: 'Lato';
+/* Estilos para el menú de navegación */
+nav {
+    font-family: 'Lato'; /* Fuente de texto 'Lato' */
     font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    display: flex;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    letter-spacing: 5.45455px;
-    text-transform: uppercase;
-    max-width: 750px;
+    font-weight: 400; /* Peso de la fuente */
+    font-size: 12px; /* Tamaño de fuente de 12 píxeles */
+    line-height: 14px; /* Altura de línea de 14 píxeles */
+    display: flex; /* Mostrar elementos como una fila horizontal */
+    justify-content: center; /* Centrar elementos horizontalmente */
+    margin-left: auto; /* Margen izquierdo automático */
+    margin-right: auto; /* Margen derecho automático */
+    letter-spacing: 5.45455px; /* Espaciado entre caracteres de 5.45455 píxeles */
+    text-transform: uppercase; /* Transformar el texto en mayúsculas */
+    max-width: 750px; /* Ancho máximo del menú de 750 píxeles */
 }
 
+/* Estilos para los enlaces en el menú de navegación */
 nav a {
-    text-align: center;
-    align-self: center;
-    margin: 0 auto;
-    padding: 40px;
+    text-align: center; /* Alinear el texto al centro */
+    align-self: center; /* Alinear verticalmente al centro */
+    margin: 0 auto; /* Márgenes automáticos horizontalmente */
+    padding: 40px; /* Relleno de 40 píxeles en todas las direcciones */
 }
 
+/* Estilos para los enlaces en el menú de navegación cuando se desplaza el puntero sobre ellos */
 nav a:hover {
-    color: #44C0FE;
+    color: #44C0FE; /* Cambiar el color del texto a azul cuando se desplaza el puntero sobre los enlaces */
 }
 
+/* Estilos para pantallas con un ancho máximo de 1000px */
 @media screen and (max-width: 1000px) {
     h1 {
-        font-size: 80px;
-        padding-top: 20px;
+        font-size: 80px; /* Aumentar el tamaño del título a 80 píxeles */
+        padding-top: 20px; /* Agregar espacio superior de 20 píxeles al título */
     }
 
-    nav { /*menu de navegacion*/
-        font-size: 20px;
+    nav {
+        font-size: 20px; /* Aumentar el tamaño de fuente del menú a 20 píxeles */
     }
 }
 
-.banner { /*banner de la pagina*/
-    max-height: 800px;
-    width: 100%;
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: flex-start;
-    justify-content: flex-start;
-    position: relative;
-    background-color: #686868;
-    margin: 0 auto;
-    align-items: flex-end;
-    justify-content: center;
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 132px;
+/* Estilos para el banner de la página */
+.banner {
+    max-height: 800px; /* Altura máxima del banner de 800 píxeles */
+    width: 100%; /* Ancho del banner al 100% del contenedor */
+    display: flex; /* Mostrar elementos en un contenedor flex */
+    flex-flow: row nowrap; /* Disposición de elementos en una fila sin envolver */
+    position: relative; /* Posición relativa */
+    background-color: #686868; /* Color de fondo del banner */
+    margin: 0 auto; /* Márgenes automáticos a izquierda y derecha */
+    align-items: flex-end; /* Alinear elementos en la parte inferior del eje vertical */
+    justify-content: center; /* Justificar elementos en el centro del eje horizontal */
+    margin-left: 0; /* Márgen izquierdo de 0 */
+    margin-right: 0; /* Márgen derecho de 0 */
+    margin-bottom: 132px; /* Márgen inferior de 132 píxeles */
 }
 
+/* Estilos para el contenido principal dentro del banner */
 .principal {
-    width: 670px;
-    display: flex;
-    flex-direction: row;
-    margin-left: 30px;
-    margin-right: 30px;
-    margin-bottom: 140px;
+    width: 670px; /* Ancho del contenido principal de 670 píxeles */
+    display: flex; /* Mostrar elementos en un contenedor flex */
+    flex-direction: row; /* Disposición de elementos en una fila */
+    margin-left: 30px; /* Márgen izquierdo de 30 píxeles */
+    margin-right: 30px; /* Márgen derecho de 30 píxeles */
+    margin-bottom: 140px; /* Márgen inferior de 140 píxeles */
 }
 
+/* Estilos para la imagen principal en el contenido */
 .prin_img {
-    min-height: 101px;
-    min-width: 101px;
+    min-height: 101px; /* Altura mínima de la imagen de 101 píxeles */
+    min-width: 101px; /* Ancho mínimo de la imagen de 101 píxeles */
 }
 
+/* Estilos para el texto principal en el contenido */
 .prin_text {
-    display: flex;
-    flex-direction: column;
-    margin-left: 30px;
+    display: flex; /* Mostrar elementos en un contenedor flex */
+    flex-direction: column; /* Disposición de elementos en una columna */
+    margin-left: 30px; /* Márgen izquierdo de 30 píxeles */
 }
 
+/* Estilos para los detalles dentro del contenido */
 .detalles {
-    margin-top: 5px;
+    margin-top: 5px; /* Márgen superior de 5 píxeles */
 }
 
+/* Estilos para el texto de los detalles */
 .detalles h6 {
-    margin: 3px;
-    display: inline;
+    margin: 3px; /* Márgen de 3 píxeles en todas las direcciones */
+    display: inline; /* Mostrar elementos en línea */
 }
 
+/* Estilos para el texto de los detalles */
 .detalles p {
-    margin: 3px;
-    display: inline;
-    color: rgba(0, 0, 0, 0.6);
+    margin: 3px; /* Márgen de 3 píxeles en todas las direcciones */
+    display: inline; /* Mostrar elementos en línea */
+    color: rgba(0, 0, 0, 0.6); /* Color de texto con transparencia */
 }
 
+/* Estilos para un elemento con el id "barranormal" */
 #barranormal {
-    color: #FFFFFF;
+    color: #FFFFFF; /* Cambiar el color del texto a blanco */
 }
 
+/* Estilos para la imagen con el id "imagen_banner" */
 #imagen_banner {
-    width: 1500px;
-    height: 320px;
+    width: 1500px; /* Ancho de la imagen de 1500 píxeles */
+    height: 320px; /* Altura de la imagen de 320 píxeles */
 }
 
-/*estilos propios para la seccion del autor*/
+/* Estilos propios para la sección del autor */
+
 .card {
-    transform: translateY(85px);
-    display: flex;
-    flex-direction: column;
-    height: 750px;
-    width: 349px;
-    border: 1px gray solid;
-    background-color: #ffffff;
-    padding: 50px;
+    transform: translateY(85px); /* Desplazar verticalmente la tarjeta 85 píxeles hacia abajo */
+    display: flex; /* Mostrar elementos en un contenedor flex */
+    flex-direction: column; /* Disposición de elementos en una columna */
+    height: 750px; /* Altura de la tarjeta de 750 píxeles */
+    width: 349px; /* Ancho de la tarjeta de 349 píxeles */
+    border: 1px gray solid; /* Borde de 1 píxel sólido en color gris */
+    background-color: #ffffff; /* Color de fondo blanco */
+    padding: 50px; /* Relleno interior de 50 píxeles */
 }
 
 .card_img {
-    height: 170px;
-    width: 250px;
-    margin-top: 10px;
-    margin-bottom: 30px;
+    height: 170px; /* Altura de la imagen de 170 píxeles */
+    width: 250px; /* Ancho de la imagen de 250 píxeles */
+    margin-top: 10px; /* Márgen superior de 10 píxeles */
+    margin-bottom: 30px; /* Márgen inferior de 30 píxeles */
 }
 
 .card h5 {
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: #2B2B2B;
+    font-family: 'Lato'; /* Fuente */
+    font-style: normal; /* Estilo de fuente normal */
+    font-weight: 300; /* Peso de fuente ligero */
+    font-size: 12px; /* Tamaño de fuente de 12 píxeles */
+    line-height: 14px; /* Altura de línea de 14 píxeles */
+    letter-spacing: 1px; /* Espaciado de letras de 1 píxel */
+    text-transform: uppercase; /* Transformar texto en mayúsculas */
+    color: #2B2B2B; /* Color de texto */
+    margin-bottom: 10px; /* Márgen inferior de 10 píxeles */
 }
 
 .card h4 {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 36px;
-    line-height: 44px;
-    margin-bottom: 10px;
-    /* identical to box height, or 122% */
-    color: #000000;
+    font-family: 'Roboto'; /* Fuente */
+    font-style: normal; /* Estilo de fuente normal */
+    font-weight: 400; /* Peso de fuente normal */
+    font-size: 36px; /* Tamaño de fuente de 36 píxeles */
+    line-height: 44px; /* Altura de línea de 44 píxeles */
+    margin-bottom: 10px; /* Márgen inferior de 10 píxeles */
+    color: #000000; /* Color de texto */
 }
 
-.card p {
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 25px;
-    letter-spacing: 0.5px;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    color: #2B2B2B;
+card p {
+    font-family: 'Lato'; /* Fuente */
+    font-style: normal; /* Estilo de fuente normal */
+    font-weight: 400; /* Peso de fuente normal */
+    font-size: 16px; /* Tamaño de fuente de 16 píxeles */
+    line-height: 25px; /* Altura de línea de 25 píxeles */
+    letter-spacing: 0.5px; /* Espaciado de letras de 0.5 píxeles */
+    margin-top: 20px; /* Márgen superior de 20 píxeles */
+    margin-bottom: 30px; /* Márgen inferior de 30 píxeles */
+    color: #2B2B2B; /* Color de texto */
 }
-/*hasta aqui los estilos propios de card*/
 
 @media screen and (max-width: 1000px) {
-
-    .wrapper { /*contenedor del titulo y las imagenes de la parte superior de la pagina*/
-        max-width: 100%;
-        display: grid; /*para que se puedan colocar los elementos de forma sencilla como si fuera una tabla*/
+    /* Estilos para el contenedor del título y las imágenes de la parte superior de la página */
+    .wrapper {
+        max-width: 100%; /* Ancho máximo del contenedor */
+        display: grid; /* Diseño de cuadrícula para organizar elementos */
     }
 
+    /* Estilos para el banner */
     .banner {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 0;
-        max-height: 300%;
-        margin-bottom: 20px;
-    }
-    
-    .principal {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 0;
-        margin: 20px;
-    }
-    
-    .prin_img {
-        margin-bottom: 30px;
-    }
-    
-    .prin_text  h2{
-        font-size: 40px;
+        flex-direction: column; /* Cambio a disposición de columna */
+        align-items: center; /* Alineación al centro horizontalmente */
+        justify-content: center; /* Alineación al centro verticalmente */
+        margin-bottom: 0; /* Eliminación de margen inferior */
+        max-height: 300%; /* Aumento de la altura máxima */
+        margin-bottom: 20px; /* Agregado de margen inferior */
     }
 
+    /* Estilos para el contenido principal */
+    .principal {
+        flex-direction: column; /* Cambio a disposición de columna */
+        align-items: center; /* Alineación al centro horizontalmente */
+        justify-content: center; /* Alineación al centro verticalmente */
+        margin-bottom: 0; /* Eliminación de margen inferior */
+        margin: 20px; /* Agregado de margen */
+    }
+
+    /* Estilos para las imágenes principales */
+    .prin_img {
+        margin-bottom: 30px; /* Agregado de margen inferior */
+    }
+
+    /* Estilos para los títulos en el contenido principal */
+    .prin_text h2 {
+        font-size: 40px; /* Cambio en el tamaño de fuente */
+    }
+
+    /* Estilos para los detalles */
     .detalles {
-        margin: 15px;
+        margin: 15px; /* Agregado de margen */
     }
-    
+
+    /* Estilos para los subtítulos en los detalles */
     .detalles h6 {
-        font-size: larger;
+        font-size: larger; /* Cambio en el tamaño de fuente */
     }
-    
-    /*estilos propios para la seccion del autor*/
+
+    /* Estilos propios para la sección del autor */
     .card {
-        transform: none;
-        display: flex;
-        flex-direction: row;
-        height: 100%;
-        width: 100%;
-        margin: 20px;
-        padding: 20px;
+        transform: none; /* Restaurar transformación */
+        display: flex; /* Mostrar elementos como una fila */
+        flex-direction: row; /* Disposición de elementos en fila */
+        height: 100%; /* Altura del 100% del contenedor */
+        width: 100%; /* Ancho del 100% del contenedor */
+        margin: 20px; /* Agregado de margen */
+        padding: 20px; /* Agregado de relleno interior */
     }
-    
+
+    /* Estilos para la imagen de la sección del autor */
     .card_img {
-        max-height: 600px;
-        height: 200px;
-        width: 700px;
-        margin-top: 10px;
-        margin-bottom: 30px;
+        max-height: 600px; /* Altura máxima de la imagen */
+        height: 200px; /* Altura de la imagen */
+        width: 700px; /* Ancho de la imagen */
+        margin-top: 10px; /* Agregado de margen superior */
+        margin-bottom: 30px; /* Agregado de margen inferior */
     }
-    
+
+    /* Estilos para el subtítulo en la sección del autor */
     .card h5 {
-        font-size: 30px;
-        margin-top: 30px;
+        font-size: 30px; /* Cambio en el tamaño de fuente */
+        margin-top: 30px; /* Agregado de margen superior */
+        margin-bottom: 20px; /* Agregado de margen inferior */
     }
-    
+
+    /* Estilos para el título en la sección del autor */
     .card h4 {
-        font-size: 50px;
+        font-size: 50px; /* Cambio en el tamaño de fuente */
     }
-    
+
+    /* Estilos para el párrafo en la sección del autor */
     .card p {
-        font-size: 25px;
+        font-size: 25px; /* Cambio en el tamaño de fuente */
     }
 }
 
+/* Estilos para los títulos h2 en los artículos */
 article h2 {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 40px;
-    color: #000000;
-    margin-bottom: 20px;
+    font-size: 40px; /* Tamaño de fuente */
+    color: #000000; /* Color del texto */
+    margin-bottom: 20px; /* Margen inferior */
 }
 
+/* Estilos generales para la sección "blog" */
 .blog {
     display: flex;
-    flex-direction: row;
-    width: 1110px;
-    height: 700px;
+    flex-direction: row; /* Diseño en filas */
+    width: 1110px; /* Ancho fijo */
+    height: 700px; /* Altura fija */
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 15px;
+    margin-bottom: 15px; /* Margen inferior */
 }
 
-.blog h2:hover, .banner h2:hover {
-    color: #44C0FE;
-    text-decoration: underline;
-    cursor: pointer;
+/* Cambio en el color del título h2 al pasar el cursor por encima en la sección "blog" y "banner" */
+.blog h2:hover,
+.banner h2:hover {
+    color: #44C0FE; /* Cambio de color del texto */
+    text-decoration: underline; /* Subrayado del texto */
+    cursor: pointer; /* Cambio de cursor al puntero al pasar el cursor por encima */
 }
 
-.blog-M { /*estilos para el cuerpo de la pagina home*/
+/* Estilos específicos para el cuerpo de la página "blog" en dispositivos con ancho menor a 1000px */
+.blog-M {
     display: flex;
-    flex-direction: column;
-    width: 380px;
-    height: 660px;
+    flex-direction: column; /* Cambio de disposición a columnas */
+    width: 380px; /* Ancho fijo */
+    height: 660px; /* Altura fija */
 }
 
+/* Estilos específicos para el cuerpo de la página "blog" en dispositivos con ancho entre 1000px y 1110px */
 .blog-XL {
     display: flex;
-    flex-direction: column;
-    width: 667px;
-    max-height: 532px;
-    height: 532px;
+    flex-direction: column; /* Cambio de disposición a columnas */
+    width: 667px; /* Ancho fijo */
+    max-height: 532px; /* Altura máxima */
+    height: 532px; /* Altura fija */
 }
 
+/* Estilos para imágenes en la sección "blog-M" */
 .blog-M img {
-    margin-top: 20px;
-    width: 380px;
-    height: 450px;
+    margin-top: 20px; /* Margen superior */
+    width: 380px; /* Ancho fijo */
+    height: 450px; /* Altura fija */
 }
 
+/* Estilos para la imagen con ID "final_image" */
 #final_image {
-    height: 320px;
+    height: 320px; /* Altura fija */
 }
 
+/* Estilos para imágenes en la sección "blog-XL" */
 .blog-XL img {
-    margin-bottom: 20px;
-    width: 667px;
-    height: 400px;
+    margin-bottom: 20px; /* Margen inferior */
+    width: 667px; /* Ancho fijo */
+    height: 400px; /* Altura fija */
 }
 
-.blog-M h2, .blog-XL h2 {
+/* Estilos para títulos h2 en las secciones "blog-M" y "blog-XL" */
+.blog-M h2,
+.blog-XL h2 {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
-    line-height: 32px;
-    /* or 133% */
+    font-size: 24px; /* Tamaño de fuente */
+    line-height: 32px; /* Altura de línea */
     display: flex;
     align-items: center;
     flex-grow: 1;
-    color: #000000;
+    color: #000000; /* Color del texto */
 }
 
-.blog-M h6, .blog-XL h6 {
+/* Estilos para subtítulos h6 en las secciones "blog-M" y "blog-XL" */
+.blog-M h6,
+.blog-XL h6 {
     font-family: 'Lato';
     font-style: normal;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: rgba(0, 0, 0, 0.6);
+    font-weight: 700; /* Peso de fuente en negrita */
+    font-size: 12px; /* Tamaño de fuente */
+    line-height: 14px; /* Altura de línea */
+    letter-spacing: 1px; /* Espaciado entre letras */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    color: rgba(0, 0, 0, 0.6); /* Color de texto con transparencia */
 }
 
-.etiqueta, .etiquetagrupo { /*estilos para las etiquetas de los articulos*/
-    max-width: 200px;
-    height: 33px;
-    width: 130px;
+/* Estilos para las etiquetas de los artículos */
+.etiqueta, .etiquetagrupo {
+    max-width: 200px; /* Ancho máximo */
+    height: 33px; /* Altura */
+    width: 130px; /* Ancho */
     display: flex;
-    justify-content: center;
-    align-items: center; 
-    background-color: #F7F6F6;
-    padding: 5px;
-    color: #000000;
-    font-weight: bold;
+    justify-content: center; /* Alineación horizontal en el centro */
+    align-items: center; /* Alineación vertical en el centro */
+    background-color: #F7F6F6; /* Color de fondo */
+    padding: 5px; /* Espaciado interno */
+    color: #000000; /* Color del texto */
+    font-weight: bold; /* Peso de fuente en negrita */
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
-    font-size: 11px;
-    line-height: 13px;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    border-radius: 3px;
-    text-align: center;
+    font-size: 11px; /* Tamaño de fuente */
+    line-height: 13px; /* Altura de línea */
+    letter-spacing: 5px; /* Espaciado entre letras */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    border-radius: 3px; /* Radio de borde */
+    text-align: center; /* Alineación del texto al centro */
 }
 
+@media screen and (max-width: 650px) {
+    .blog {
+        margin-bottom: 180%; /* Espacio adicional en la parte inferior de la sección */
+    }
+
+    /* Estilos para el elemento con ID "XL2" */
+    #XL2 {
+        margin-bottom: 80%; /* Espacio adicional en la parte inferior */
+    }
+}
+
+/* Estilos para la sección "blog" de móviles */
 @media screen and (max-width: 1000px) {
     .blog {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        margin-bottom: 130%;
+        display: flex; /* Mostrar elementos como una columna */
+        flex-direction: column; /* Cambiar la dirección de diseño a columna */
+        width: 100%; /* Ancho del 100% para ocupar todo el espacio disponible */
+        margin-bottom: 145%; /* Espacio adicional en la parte inferior de la sección */
     }
-    
-    .blog-M { /*estilos para el cuerpo de la pagina home*/
-        width: 100%;
-        align-items: center;
-        padding: 20px;
-        height: auto;
-        margin-bottom: 30px;
+
+    /* Estilos para la sección "blog-M" (cuerpo de la página) */
+    .blog-M {
+        width: 100%; /* Ancho del 100% para ocupar todo el espacio disponible */
+        align-items: center; /* Alinear elementos en el centro verticalmente */
+        padding: 20px; /* Espaciado interno */
+        height: auto; /* Altura automática para ajustarse al contenido */
+        margin-bottom: 30px; /* Espacio adicional en la parte inferior de la sección */
     }
-    
+
+    /* Estilos para la sección "blog-XL" */
     .blog-XL {
-        width: 100%;
-        align-items: center;
-        padding: 20px;
-        margin-bottom: 30px;
+        width: 100%; /* Ancho del 100% para ocupar todo el espacio disponible */
+        align-items: center; /* Alinear elementos en el centro verticalmente */
+        padding: 20px; /* Espaciado interno */
+        margin-bottom: 30px; /* Espacio adicional en la parte inferior de la sección */
     }
 
+    /* Estilos para el elemento con ID "XL2" */
     #XL2 {
-        margin-bottom: 50%;
-        border-top: 20px solid #D8D8D8;
+        margin-bottom: 50%; /* Espacio adicional en la parte inferior */
+        border-top: 20px solid #D8D8D8; /* Borde superior */
     }
-    
+
+    /* Estilos para las imágenes en la sección "blog-M" */
     .blog-M img {
-        margin-bottom: 20px;
-        width: 100%;
+        margin-bottom: 20px; /* Espacio adicional en la parte inferior de las imágenes */
+        width: 100%; /* Ancho del 100% para que las imágenes se ajusten al ancho de su contenedor */
     }
-    
+
+    /* Estilos para las imágenes en la sección "blog-XL" */
     .blog-XL img {
-        margin-bottom: 20px;
-        width: 100%;
-    }
-    
-    .blog-M h2, .blog-XL h2 {
-        line-height: 50px;
-        margin: 5px;
-        font-size: 50px;
-    }
-    
-    .blog-M h6, .blog-XL h6 {
-        font-size: 20px;
-        margin: 5px;
+        margin-bottom: 20px; /* Espacio adicional en la parte inferior de las imágenes */
+        width: 100%; /* Ancho del 100% para que las imágenes se ajusten al ancho de su contenedor */
     }
 
-    .blog-M p, .blog-XL p {
-        font-size: 40px;
+    /* Estilos para títulos h2 en las secciones "blog-M" y "blog-XL" */
+    .blog-M h2,
+    .blog-XL h2 {
+        line-height: 50px; /* Altura de línea personalizada */
+        margin: 5px; /* Margen alrededor de los títulos */
+        font-size: 50px; /* Tamaño de fuente personalizado */
     }
-    
-    .etiqueta, .etiquetagrupo { /*estilos para las etiquetas de los articulos*/
-        max-width: 300px;
-        height: 40px;
-        width: fit-content;
+
+    /* Estilos para subtítulos h6 en las secciones "blog-M" y "blog-XL" */
+    .blog-M h6,
+    .blog-XL h6 {
+        font-size: 20px; /* Tamaño de fuente personalizado para los subtítulos */
+        margin: 5px; /* Margen alrededor de los subtítulos */
+    }
+
+    /* Estilos para párrafos en las secciones "blog-M" y "blog-XL" */
+    .blog-M p,
+    .blog-XL p {
+        font-size: 40px; /* Tamaño de fuente personalizado para los párrafos */
+    }
+
+    /* Estilos para las etiquetas de los artículos */
+    .etiqueta,
+    .etiquetagrupo {
+        max-width: 300px; /* Ancho máximo para las etiquetas */
+        height: 40px; /* Altura de las etiquetas */
+        width: fit-content; /* Ancho ajustado al contenido */
+        margin-top: 20px; /* Margen superior de las etiquetas */
+        margin-bottom: 20px; /* Margen inferior de las etiquetas */
     }
 }
 
-.social{
-    width: 1110px;
-    margin-left: auto;
-    margin-right: auto;
+/* Estilos para la sección "social" */
+.social {
+    width: 1110px; /* Ancho fijo de 1110 píxeles */
+    margin-left: auto; /* Centrar horizontalmente en el contenedor padre */
+    margin-right: auto; /* Centrar horizontalmente en el contenedor padre */
 }
 
-.social h3{
-    font-family: 'Lato';
+/* Estilos para el título h3 en la sección "social" */
+.social h3 {
+    font-family: 'Lato'; /* Fuente personalizada */
     font-style: normal;
     font-weight: 400;
-    font-size: 11px;
+    font-size: 11px; /* Tamaño de fuente personalizado */
     line-height: 13px;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    color: #2B2B2B;
-    width: 100%; 
-    text-align: left; 
-    border-bottom: 1px solid #D8D8D8;
-    line-height: 0.1em;
-    margin: 10px 0 20px;
+    letter-spacing: 5px; /* Espaciado entre caracteres */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    color: #2B2B2B; /* Color de texto */
+    width: 100%; /* Ancho completo */
+    text-align: left; /* Alineación de texto a la izquierda */
+    border-bottom: 1px solid #D8D8D8; /* Borde inferior */
+    line-height: 0.1em; /* Altura de línea mínima */
+    margin: 10px 0 20px; /* Márgenes superiores e inferiores */
 }
 
-.social h3 span { 
-    background:#fff; 
-    padding:0 10px;
+/* Estilos para un span dentro del título h3 */
+.social h3 span {
+    background: #fff; /* Fondo blanco para el span */
+    padding: 0 10px; /* Relleno interior */
 }
 
-
-.social_nets{
-    display: flex;
-    justify-content: space-between;
-    gap: 31px;
-    margin: 70px 0 70px 0;
+/* Estilos para la sección "social_nets" */
+.social_nets {
+    display: flex; /* Mostrar elementos como una fila */
+    justify-content: space-between; /* Espacio uniformemente distribuido entre elementos */
+    gap: 31px; /* Espacio entre elementos */
+    margin: 70px 0 70px 0; /* Márgenes superior e inferior */
 }
 
-.social_nets img{
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
+/* Estilos para imágenes dentro de "social_nets" */
+.social_nets img {
+    width: 60px; /* Ancho fijo para las imágenes */
+    height: 60px; /* Altura fija para las imágenes */
+    border-radius: 50%; /* Borde redondeado para que las imágenes sean circulares */
 }
 
-.social_nets :hover{
-    cursor : pointer;
+/* Estilos para elementos que están en estado de "hover" (sobre) en "social_nets" */
+.social_nets:hover {
+    cursor: pointer; /* Cambiar el cursor a una mano cuando se pasa sobre estos elementos */
 }
 
-footer{ /*estilos para el footer*/
-    border-top: 1px solid #D8D8D8; 
-    line-height: 0.1em;
-    width: 1110px;
-    margin-left: auto;
-    margin-right: auto;
+/* Estilos generales para el footer */
+footer {
+    border-top: 1px solid #D8D8D8; /* Línea superior de separación */
+    line-height: 0.1em; /* Altura de línea mínima para la separación */
+    width: 1110px; /* Ancho fijo de 1110 píxeles */
+    margin-left: auto; /* Centrar horizontalmente en el contenedor padre */
+    margin-right: auto; /* Centrar horizontalmente en el contenedor padre */
 }
 
-footer nav{ /*estilos para el navegador del footer*/
-    display:block;
-    position: relative;
-    margin:0px;
-    margin-bottom: 30px;
-}
- 
-.blue_hover:hover{
-    color: #44C0FE;
+/* Estilos para el navegador en el footer */
+footer nav {
+    display: block; /* Mostrar como bloque */
+    position: relative; /* Posición relativa */
+    margin: 0; /* Sin márgenes */
+    margin-bottom: 30px; /* Márgenes en la parte inferior */
 }
 
-footer nav a{
-    font-family: 'Lato';
+/* Estilos para elementos con la clase "blue_hover" en estado de "hover" (sobre) */
+.blue_hover:hover {
+    color: #44C0FE; /* Cambiar el color del texto cuando se pasa sobre el elemento */
+}
+
+/* Estilos para enlaces (a) en el footer */
+footer nav a {
+    font-family: 'Lato'; /* Fuente personalizada */
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 25px;
-    /* identical to box height, or 156% */
-    margin:10px;
-    margin-left:0px;
-    padding:0px;
-    margin-top:40px;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    text-align: left;
-    color: rgba(0, 0, 0, 0.216882);
+    font-size: 16px; /* Tamaño de fuente personalizado */
+    line-height: 25px; /* Altura de línea personalizada */
+    margin: 10px; /* Márgenes alrededor del enlace */
+    margin-left: 0; /* Sin margen izquierdo */
+    padding: 0; /* Sin relleno interno */
+    margin-top: 40px; /* Márgenes en la parte superior */
+    letter-spacing: 0.5px; /* Espaciado entre caracteres */
+    text-transform: uppercase; /* Texto en mayúsculas */
+    text-align: left; /* Alineación de texto a la izquierda */
+    color: rgba(0, 0, 0, 0.216882); /* Color de texto con transparencia */
 }
 
 @media screen and (max-width: 1000px) {
-    .social{
-        width: 100%;
-    }
+    /* Estilos para la sección de redes sociales */
+.social {
+    width: 100%; /* Ancho completo para adaptarse a pantallas más pequeñas */
+}
 
-    .social h3{
-        font-size: 30px;
-    }
+/* Estilos para el título "h3" dentro de la sección de redes sociales */
+.social h3 {
+    font-size: 30px; /* Tamaño de fuente más grande */
+}
 
-    .social_nets {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-        justify-items: center;
-    }
+/* Estilos para el contenedor de las redes sociales */
+.social_nets {
+    display: grid; /* Mostrar elementos como una cuadrícula */
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas con ancho igual */
+    gap: 20px; /* Espacio entre elementos */
+    justify-items: center; /* Centrar los elementos horizontalmente */
+}
 
-    .social_nets img {
-        width: 80px;
-        height: 80px;
-    }
+/* Estilos para las imágenes de redes sociales */
+.social_nets img {
+    width: 80px; /* Tamaño más grande de las imágenes */
+    height: 80px; /* Tamaño más grande de las imágenes */
+}
 
-    footer {
-        padding-top: 20px;
-        border-top: 1px solid #D8D8D8;
-    }
+/* Estilos para el footer */
+footer {
+    padding-top: 20px; /* Espacio en la parte superior del footer */
+    border-top: 1px solid #D8D8D8; /* Línea superior de separación */
+}
 
-    footer nav {
-        margin: 0;
-        margin-bottom: 20px;
-    }
+/* Estilos para el navegador en el footer */
+footer nav {
+    margin: 0; /* Sin márgenes */
+    margin-bottom: 20px; /* Márgenes en la parte inferior del navegador del footer */
+}
 
-    footer nav a {
-        margin: 5px;
-        margin-left: 0;
-        padding: 0;
-        margin-top: 20px;
-        font-size: 30px;
-    }
+/* Estilos para enlaces (a) en el footer */
+footer nav a {
+    margin: 5px; /* Márgenes alrededor de los enlaces */
+    margin-left: 0; /* Sin margen izquierdo */
+    padding: 0; /* Sin relleno interno */
+    margin-top: 20px; /* Márgenes en la parte superior de los enlaces */
+    font-size: 30px; /* Tamaño de fuente más grande */
+}
 }

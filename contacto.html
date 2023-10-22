@@ -13,30 +13,35 @@
 
 <body>
     <header>
-        <!-- Titulo-->
+        <!-- Encabezado del sitio -->
         <div class="titulo">
-            <h1>NNNewS</h1>
+            <h1>NNNewS</h1> <!-- Título del sitio -->
         </div>
+        <!-- Barra de navegación -->
         <nav>
-            <a href="index.html">Home</a>
-            <a href="noticia.html">Noticia destacada</a>
-            <a href="contacto.html">Login</a>
+            <a href="index.html">Home</a> <!-- Enlace a la página de inicio -->
+            <a href="noticia.html">Noticia destacada</a> <!-- Enlace a una noticia destacada -->
+            <a href="contacto.html">Login</a> <!-- Enlace a la página de inicio de sesión -->
         </nav>
     </header>
 
     <div class="center">
-    <div class="login">
-        <h2>Iniciar Sesión</h2>
-        <form action="index.html" method="get">
-            <label for="email_login">Correo Electrónico:</label><br>
-            <input type="email" name="email_login" id="email_login" required placeholder="Email"><br>
-            <label for="contrasena_login">Contraseña:</label><br>
-            <input type="password" name="contrasena_login" id="contrasena_login" required placeholder="Contraseña"><br>
-            <button type="submit">Iniciar Sesión</button>
-            <p>¿No tienes cuenta?</p>
-        </form>
-        <button onclick="location.href='contacto_reg.html'">Regístrate</button>
-    </div>
+        <!-- Contenedor central para el formulario de inicio de sesión -->
+        <div class="login">
+            <!-- Formulario de inicio de sesión -->
+            <h2>Iniciar Sesión</h2> <!-- Título del formulario de inicio de sesión -->
+            <form action="index.html" method="get">
+                <!-- Etiquetas y campos del formulario -->
+                <label for="email_login">Correo Electrónico:</label><br> <!-- Etiqueta para el campo de correo electrónico -->
+                <input type="email" name="email_login" id="email_login" required placeholder="Email"><br> <!-- Campo de correo electrónico -->
+                <label for="contrasena_login">Contraseña:</label><br> <!-- Etiqueta para el campo de contraseña -->
+                <input type="password" name="contrasena_login" id="contrasena_login" required placeholder="Contraseña"><br> <!-- Campo de contraseña -->
+                <button type="submit">Iniciar Sesión</button> <!-- Botón de inicio de sesión -->
+                <p>¿No tienes cuenta?</p> <!-- Párrafo de "¿No tienes cuenta?" -->
+            </form>
+            <button onclick="location.href='contacto_reg.html'">Regístrate</button> <!-- Botón para registrarse -->
+        </div>
+    <!--Contenedores para el fondo animado-->
     <div class="box">
         <div></div>
         <div></div>
